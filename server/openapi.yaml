@@ -295,6 +295,43 @@ paths:
                   message:
                     type: string
                     description: Error message indicating an internal server error.
+  /delivery-person/orders/{orderId}/status:
+     put:
+      summary: Change Order Status by Order ID and Delivery Person ID
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The ID of the order to update.
+          schema:
+            type: integer
+        - name: deliveryPersonId
+          in: query
+          required: true
+          description: The ID of the delivery person responsible for the order.
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                newStatus:
+                  type: string
+                  description: The new status for the order.
+                  enum: [pending, preparing, out_for_delivery, delivered, canceled]
+      responses:
+        '200':
+          description: Successful update of order status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Message to confirm the status update.
 
   /admin/approve-delivery-partner/{deliveryPartnerId}:
     put:

@@ -50,6 +50,34 @@ For Restaurant Owners:
 
 6. Monitoring Every Action: Owners can monitor food orders, delivery partners, deliveries, reviews, ratings, and other data. They can track delivery partner and driver performance.
 
+For Delivery Partners:
+
+Delivery partners are a crucial part of the system as they are responsible for ensuring the timely and accurate delivery of orders. Here are the features related to delivery partners:
+
+1. Profile Management: Delivery partners have the ability to manage their profiles. This includes updating personal information such as name, gender, age, contact details, and other relevant information.
+
+2. ID Proof Verification by Admins: Before a delivery partner can start accepting orders, their identity proof and other relevant documents must be verified by administrators. This verification process ensures that only legitimate and authorized individuals become delivery partners.
+
+3. Real-Time Tracking: Delivery partners have access to a real-time tracking feature. This allows them to see the orders assigned to them, view customer location, and select the most efficient routes to make deliveries. The real-time tracking feature also provides delivery partners with alerts for new orders.
+
+4. Order Pickup: Delivery partners receive notifications for order assignments, including details about the pickup location, restaurant, and customer. This ensures efficient and accurate order pickups.
+
+5. Delivery Confirmation: Once an order is successfully delivered, the delivery partner updates the system to confirm the delivery. This action triggers the completion of the order, and the customer is notified.
+
+6. Availability Status: Delivery partners have the ability to set their availability status. When they are available, they can accept new orders. When unavailable, the system will not assign new orders to them.
+
+7. Average Rating: Customers have the option to rate delivery partners based on their behavior, punctuality, and service quality. This rating system helps maintain a high standard of service and provides feedback to delivery partners.
+
+8. Total Orders Delivered: Delivery partners can view statistics related to the number of orders they have successfully delivered. This information provides insights into their performance.
+
+Proof Verification Process:
+
+As part of the registration and onboarding process for delivery partners, administrators will verify the submitted identity proofs and relevant documents to ensure the legitimacy and trustworthiness of the delivery partner.
+
+Profile Updates:
+
+Delivery partners can periodically update their profiles with any changes to personal information. They may need to provide updated contact information or address details, and these changes should be reflected in the system.
+
 For Administrators:
 
 1. Restaurant Management: Administrators can add, update, and remove restaurants and monitor active restaurant status.
