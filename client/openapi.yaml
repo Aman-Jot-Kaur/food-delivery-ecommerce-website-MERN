@@ -19,16 +19,47 @@ paths:
                   description: The name of the user.
                 role:
                   type: string
-                  enum: [customer, delivery_partner, restaurant_owner, admin]
-                  description: The user's role (customer, delivery partner, restaurant owner, or admin).
+                  enum: [customer, delivery_partner, restaurant_owner]
+                  description: The user's role (customer, delivery partner, restaurant owner).
                 password:
                   type: string
                 email:
                   type: string
                   format: email
       responses:
-        "201":
-          description: The user registered successfully
+        "200":
+         description: Successful creation of user
+         content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: Message to show that the user was added successfully
+        "500":
+         description: Internal Server Error
+         content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: An error message indicating an internal server error.
+        "409":
+         description: Conflict - User Already Exists
+         content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: An error message indicating that a user with the given email already exists.
+        
+          
+        
 
   /users/authenticate:
     post:
